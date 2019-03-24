@@ -2845,6 +2845,31 @@ input, select, textarea {
 			width: 3rem;
 		}
 
+/* Arrow */
+
+	a.contact {
+		border-bottom: 0;
+		display: inline-block;
+		height: 4rem;
+		position: relative;
+		width: 6rem;
+	}
+
+		a.contact .label {
+			display: none;
+		}
+
+		a.contact:before {
+			background-image: url("../../images/contact.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: inline-block;
+			height: 100%;
+			position: relative;
+			width: 3rem;
+		}
 /* Gallery */
 
 	@-moz-keyframes gallery-modal-spinner {
