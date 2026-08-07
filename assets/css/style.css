@@ -1,0 +1,609 @@
+/* ============================================================
+   about.yuxiang.io — Yuxiang Gao, roboticist · founder of COCO Matrix
+   A minimal, prose-first personal page.
+   Palette: cyan-tinted ink + COCO cyan + a dusk violet from the portrait.
+   Type: Sora (display) / IBM Plex Sans + IBM Plex Sans SC (prose)
+         / IBM Plex Mono (dates, labels, the "//" motif)
+   Mono type scale: 0.8rem nav · 0.75rem captions · 0.72rem micro-labels
+   ============================================================ */
+
+:root {
+  --bg: #060f16;
+  --text: #e8f1f4;
+  --muted: #9ab0ba;
+  --faint: #64808c;
+  --line: rgba(232, 241, 244, 0.1);
+  --cyan: #12d2f2;
+  --cyan-soft: rgba(18, 210, 242, 0.09);
+  --cyan-a25: rgba(18, 210, 242, 0.25);
+  --cyan-a45: rgba(18, 210, 242, 0.45);
+  --cyan-a55: rgba(18, 210, 242, 0.55);
+  --dusk: #c88bf0;
+  --dusk-a55: rgba(200, 139, 240, 0.55);
+  --dusk-glow: rgba(200, 139, 240, 0.13);
+  --radius-card: 16px;
+  /* One superfamily across both languages: IBM Plex Sans + its SC
+     sibling share the same skeleton, so 中/EN switching keeps the voice. */
+  --font-display: "Sora", "IBM Plex Sans SC", "PingFang SC", sans-serif;
+  --font-body: "IBM Plex Sans", "IBM Plex Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "IBM Plex Mono", "IBM Plex Sans SC", ui-monospace, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--dusk);
+  color: var(--bg);
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 44rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 2rem);
+}
+
+/* ---------- header ---------- */
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding-top: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: var(--cyan);
+}
+
+/* the robot mark's colors live here, not in the SVG markup */
+.coco-mark .body,
+.coco-mark .pupils {
+  fill: var(--cyan);
+}
+
+.coco-mark .face {
+  fill: #ffffff;
+}
+
+.brand img {
+  width: 22px;
+  height: 22px;
+}
+
+.brand .zh {
+  color: var(--faint);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.top-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.top-links a {
+  color: var(--muted);
+}
+
+.top-links a:hover {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+/* ---------- language switch ---------- */
+/* One language visible at a time; the header button flips
+   html[data-lang] and the rules below do the rest. */
+
+[data-lang="en"] .zh-only {
+  display: none !important;
+}
+
+[data-lang="zh"] .en-only {
+  display: none !important;
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  padding: 0.18rem 0.75rem;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  color: var(--cyan);
+  border-color: var(--cyan-a45);
+}
+
+[data-lang="zh"] body {
+  letter-spacing: 0.01em;
+}
+
+/* ---------- sections ---------- */
+
+section {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+}
+
+section + section {
+  border-top: 1px solid var(--line);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+h2 .index {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--cyan);
+  letter-spacing: 0.16em;
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ---------- intro ---------- */
+
+.intro {
+  padding-top: clamp(3.5rem, 9vh, 6rem);
+  position: relative;
+}
+
+.code-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--cyan);
+  letter-spacing: 0.06em;
+  margin-bottom: 1.1rem;
+}
+
+.intro h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.75rem;
+  max-width: 16ch;
+}
+
+.intro h1 em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.intro-photo {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.photo-stack {
+  position: relative;
+  display: inline-block;
+}
+
+.intro-photo .portrait {
+  width: clamp(200px, 26vw, 256px);
+  height: auto;
+}
+
+/* the little robot peeks over the portrait's corner */
+.hero-mark {
+  position: absolute;
+  right: -18px;
+  bottom: -14px;
+  line-height: 0;
+}
+
+.hero-mark .coco-mark {
+  width: clamp(56px, 8vw, 72px);
+  height: auto;
+  filter: drop-shadow(0 10px 24px rgba(4, 12, 18, 0.6));
+}
+
+.mark-note {
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+  letter-spacing: 0.05em;
+}
+
+.portrait {
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px var(--dusk-glow);
+}
+
+.coco-mark .pupils {
+  transition: transform 0.18s ease-out;
+}
+
+.coco-mark .pupil {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: blink 5.4s infinite;
+}
+
+@keyframes blink {
+  0%, 94%, 100% { transform: scaleY(1); }
+  96.5% { transform: scaleY(0.08); }
+}
+
+@media (max-width: 560px) {
+  .brand .zh {
+    display: none;
+  }
+  .top-links {
+    gap: 0.9rem;
+    font-size: 0.75rem;
+  }
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+  .intro-photo {
+    order: -1;
+  }
+  .intro-photo .portrait {
+    width: clamp(150px, 40vw, 200px);
+  }
+}
+
+/* ---------- teach-by-demonstration demo ---------- */
+/* Draw a path in the panel; the robot replays it at once.
+   In-context learning, as a toy. */
+
+.demo-lede {
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+
+.teach {
+  position: relative;
+  height: 240px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background-image: radial-gradient(var(--cyan-soft) 1px, transparent 1px);
+  background-size: 22px 22px;
+  cursor: crosshair;
+  touch-action: none;
+  overflow: hidden;
+}
+
+.teach-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.teach-trace {
+  fill: none;
+  stroke: var(--cyan-a55);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.teach-bot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.teach-bot .coco-mark {
+  width: 44px;
+  height: auto;
+  filter: drop-shadow(0 8px 18px var(--cyan-a25));
+}
+
+.teach-obstacles rect {
+  fill: rgba(154, 176, 186, 0.1);
+  stroke: rgba(154, 176, 186, 0.35);
+  stroke-width: 1.5;
+}
+
+.goal-pad {
+  fill: rgba(200, 139, 240, 0.08);
+  stroke: var(--dusk-a55);
+  stroke-width: 1.5;
+}
+
+.goal-bolt {
+  fill: var(--dusk);
+}
+
+.teach-goal.lit {
+  filter: drop-shadow(0 0 12px rgba(200, 139, 240, 0.9));
+}
+
+.teach-bot.bump .coco-mark {
+  animation: bump 0.45s ease;
+}
+
+@keyframes bump {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-4deg); }
+  55% { transform: translateX(4px) rotate(3deg); }
+  100% { transform: none; }
+}
+
+.teach-status {
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+  letter-spacing: 0.05em;
+}
+
+
+@media (max-width: 560px) {
+  .teach {
+    height: 200px;
+  }
+}
+
+/* ---------- coco ---------- */
+
+.coco-logo {
+  width: min(230px, 60%);
+  margin: 0.4rem 0 1.5rem;
+}
+
+.co-words {
+  color: var(--muted);
+}
+
+.co-words b {
+  color: var(--cyan);
+  font-weight: 500;
+}
+
+/* ---------- training log ---------- */
+
+.log {
+  list-style: none;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.log li {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: baseline;
+}
+
+.log .years {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+  letter-spacing: 0.06em;
+  text-align: right;
+}
+
+.log .years.now {
+  color: var(--cyan);
+}
+
+.log .what {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.log .what strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.log .phase {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+@media (max-width: 560px) {
+  .log li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .log .years {
+    text-align: left;
+  }
+}
+
+/* ---------- research ---------- */
+
+.pubs {
+  list-style: none;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.pubs li {
+  line-height: 1.5;
+}
+
+.pubs a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.pubs a:hover {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pubs .meta {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+  letter-spacing: 0.05em;
+  margin-top: 0.15rem;
+}
+
+/* ---------- footer ---------- */
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding-block: clamp(2.5rem, 6vw, 4rem) 3rem;
+}
+
+.footer .hello {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 1rem 0 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+}
+
+.footer-links a:hover {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.footer .fine {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--faint);
+  letter-spacing: 0.05em;
+}
+
+/* ---------- scroll reveal ---------- */
+/* Hidden state only applies when JS is running (html.js is stamped by an
+   inline script in <head>), so a no-JS visit still sees the whole page. */
+
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+html.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .coco-mark .pupil {
+    animation: none;
+  }
+  .coco-mark .pupils {
+    transition: none;
+  }
+  .teach-bot.bump .coco-mark {
+    animation: none;
+  }
+}

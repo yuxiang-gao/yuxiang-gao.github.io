@@ -1,567 +1,305 @@
-<!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
 
 <head>
-	<title>Yuxiang Gao</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script>document.documentElement.classList.add("js");</script>
+	<title>Yuxiang Gao 高宇翔 · roboticist, founder of COCO Matrix</title>
+	<meta name="description"
+		content="Yuxiang Gao (高宇翔) is a roboticist and the founder & CEO of COCO Matrix, building robots that learn in context, from people, without retraining. Ten years in robotics, from HRI research at Johns Hopkins to humanoid world models at Fourier." />
+	<meta property="og:title" content="Yuxiang Gao · roboticist, founder of COCO Matrix" />
+	<meta property="og:description"
+		content="I teach robots how to learn. Ten years in robotics, one question. Where should robot intelligence go?" />
+	<meta property="og:image" content="https://about.yuxiang.io/images/coco/mark-512.png" />
+	<meta property="og:url" content="https://about.yuxiang.io/" />
+	<meta property="og:type" content="website" />
+	<link rel="icon" type="image/png" sizes="32x32" href="images/coco/favicon-32.png" />
+	<link rel="apple-touch-icon" href="images/coco/apple-touch-icon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+SC:wght@400;500;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/style.css?v=10" />
 </head>
 
-<body class="is-preload">
+<body>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+	<header class="top container">
+		<a class="brand" href="/">
+			<img src="images/coco/favicon-32.png" alt="" width="22" height="22" />
+			Yuxiang Gao <span class="zh" lang="zh-Hans">高宇翔</span>
+		</a>
+		<nav class="top-links" aria-label="Contact links">
+			<a href="mailto:gaoyuxiang@cocomatrix.cn">email</a>
+			<a href="https://github.com/DavidGogh">github</a>
+			<a href="https://www.linkedin.com/in/yuxiang-gao-268084114/">linkedin</a>
+			<button class="lang-toggle" type="button" aria-label="切换语言 / switch language">中文</button>
+		</nav>
+	</header>
 
-		<!-- Intro -->
-		<section class="intro">
-			<header>
-				<h1>Yuxiang Gao</h1>
-				<p>robotics enthusiast, engineer &amp; researcher <!--| <a href="#contact">Contact Me</a>--></p>
-				<ul class="actions">
-					<!--							  <li><input type="submit" value="Send Message" class="primary" /></li>-->
-					<li><a href="#contact" class="contact scrolly"><span class="label">Next</span></a></li>
-					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-				</ul>
-			</header>
-			<div class="content">
-				<span class="image fill" data-position="center"><img src="images/myself.jpg" alt="" /></span>
-			</div>
-		</section>
+	<main>
 
-		<!-- Section -->
-		<section id="first">
-			<header>
-				<h2>My Vision</h2>
-			</header>
-			<div class="content">
-				<p>As an aspiring <strong>roboticist</strong>, I am deeply interested in harnessing multi-modal
-					information to improve how robots perceive and interact with humans and
-					their surroundings.</p>
-				<span class="image main"><img src="images/robot.png" alt="" /></span>
-			</div>
-		</section>
-
-		<!-- Section -->
-		<section id="skills">
-			<header>
-				<h2>Skill Set</h2>
-			</header>
-			<div class="content">
-				<p>With a wide variety of interests, I have developed strong skills in <strong>robotics</strong>,
-					<strong>computer vision</strong>, <strong>programming</strong>, and <strong>deep learning</strong>.
-				</p>
-				<p>Here are some highlights from my skill set. </p>
-				<ul class="feature-icons">
-					<li class="icon fa-cogs">Robot Operating System</li>
-					<li class="icon fa-fire-alt">PyTorch</li>
-					<li class="icon fa-code">C/C++</li>
-					<li class="icon fa-python">Python</li>
-					<li class="icon fa-cube">Unity3D</li>
-					<li class="icon fa-linux">Linux</li>
-					<li class="icon fa-code-branch">Git</li>
-					<li class="icon fa-typescript">TypeScript</li>
-					<li class="icon fa-rust">Rust</li>
-					<li class="icon"><strong>......</strong></li>
-				</ul>
-				<!--							<p>Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>-->
-			</div>
-		</section>
-
-		<!-- Section -->
-		<section id="projects">
-			<header>
-				<h2>Projects</h2>
-			</header>
-			<div class="content">
-				<p>I constantly seek opportunities to push the limits of my knowledge in robotics. I have worked closely
-					with robots many forms, including <strong>robot manipulators</strong>, <strong>drones</strong>,
-					<strong>mobile robots</strong>, <strong>auto-driving cars</strong>. And I absolutely love them all.
-				</p>
-				<!-- Section -->
-				<section>
-					<header>
-						<h3>PATI System</h3>
-						<p>PATI is a Projection-based Augmented Table-top Interface for robot programming—through which
-							users are able to use simple, common gestures (e.g., pinch gestures) and tools (e.g., shape
-							tools) to specify table-top manipulation tasks (such as pick-and-place) for a robot
-							manipulator. It allows users to interact with the environment directly when providing task
-							specifications. This work indicates a new direction for end-user robot programming.<br>
-							This work is <a href="https://dl.acm.org/citation.cfm?id=3302326">published</a> in <a
-								href="http://iui.acm.org/">IUI '19</a>.
+		<section class="intro container">
+			<div class="intro-grid">
+				<div>
+					<p class="code-eyebrow">
+						<span class="en-only">// roboticist · founder &amp; CEO, COCO Matrix</span>
+						<span class="zh-only" lang="zh-Hans">// 机器人研究者 · COCO Matrix 创始人 &amp; CEO</span>
+					</p>
+					<h1>
+						<span class="en-only">I teach robots <em>how to learn.</em></span>
+						<span class="zh-only" lang="zh-Hans">我教机器人，<br /><em>学会学习。</em></span>
+					</h1>
+					<div class="en-only">
+						<p>
+							I'm a roboticist. In April 2026 I founded <strong>COCO Matrix</strong>, where we
+							build robots that learn the way people do. A few demonstrations, a little
+							language, an occasional correction, and the robot has a new skill.
 						</p>
-					</header>
-					<div class="content">
-						<div class="gallery">
-							<a href="http://davidgogh.github.io/PATI" class="landscape"><img
-									src="images/pati/thumbs/pati-kinect-objects.jpg" alt="" /></a>
-							<a href="images/pati/teaser-opt.jpg" class="landscape"><img
-									src="images/pati/thumbs/teaser-opt.jpg" alt="" /></a>
-							<a href="images/pati/7.jpg"><img src="images/pati/thumbs/7.jpg" alt="" /></a>
-							<a href="images/pati/1.jpg"><img src="images/pati/thumbs/1.jpg" alt="" /></a>
-						</div>
-						<p></p>
-						<ul class="actions">
-							<li><a href="https://dl.acm.org/citation.cfm?id=3302326" class="button primary large">Link
-									to Paper</a></li>
-							<li><a href="https://davidgogh.github.io/PATI" class="button large">Learn More</a></li>
-						</ul>
+						<p>
+							<strong>Robots have kept me busy for ten years</strong>, from human-robot
+							interaction research at Johns Hopkins to humanoid world models at Fourier. The
+							longer I built them, the harder one question pressed. Where should robot
+							intelligence go? Scenes change; the person stays. Today's robots compete on how
+							much they know. The ones I want to build will compete on
+							<strong>how fast they learn</strong>, and people are their best teachers.
+						</p>
 					</div>
-
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h3>RoboMaster AI Challenge</h3>
-						<p>As the technicl lead of the team, I competed in the <a
-								href="https://www.robomaster.com/en-US/robo/icra">ICRA 2018 RoboMaster AI Challenge</a>,
-							arobotics competition hosted jointly by DJI and IEEE International Conference on Robotics
-							and Automation, and will compete again in May 2019 in Montreal, Canada. As the first team
-							from Johns Hopkins University to compete in this challenge, we overcame many difficulties
-							and made to the finallist as one of the twelve teams sponsored by DJI based on the quality
-							of the technical report.</p>
-					</header>
-					<div class="content">
-						<div class="gallery">
-							<a href="https://lcsr.jhu.edu/2018/07/12/lcsr-students-participate-in-robomaster-ai-challenge-at-the-international-conference-on-robotics-and-automation/#.XJdWoC2ZPOR"
-								class="landscape"><img src="images/robomaster/thumbs/Hopai.jpg" alt="" /></a>
-							<a href="images/robomaster/tracking.png"><img src="images/robomaster/thumbs/tracking.png"
-									alt="" /></a>
-							<a href="images/robomaster/mapping.png"><img src="images/robomaster/thumbs/mapping.jpg"
-									alt="" /></a>
+					<div class="zh-only" lang="zh-Hans">
+						<p>我是一名机器人研究者。2026 年 4 月，我创办了 <strong>COCO Matrix</strong>。我们让机器人像人一样学习，几次示范，几句指导，偶尔纠正一下，它就学会一个新技能。</p>
+						<p><strong>过去十年，驱动我的一直是机器人</strong>。在约翰·霍普金斯研究人机交互，在傅利叶做人形机器人世界模型。造得越久，有个问题就越挥之不去。机器人智能最终应该走向哪里？场景一直在变，人始终没变。今天的机器人，比的是谁会得更多。我想造的机器人，比的是<strong>谁学得更快</strong>，而人，就是它最好的老师。</p>
+					</div>
+				</div>
+				<figure class="intro-photo">
+					<div class="photo-stack">
+						<img class="portrait" src="images/portrait-web.jpg" width="512" height="683"
+							alt="Yuxiang Gao in front of a violet dusk sky over the mountains" />
+						<div class="hero-mark" aria-hidden="true">
+							<svg class="coco-mark" viewBox="0 0 512 512"
+								xmlns="http://www.w3.org/2000/svg">
+								<g fill="#12d2f2">
+									<rect x="104" y="86" width="132" height="120" rx="36" />
+									<rect x="276" y="86" width="132" height="120" rx="36" />
+									<rect x="36" y="152" width="120" height="212" rx="36" />
+									<rect x="356" y="152" width="120" height="212" rx="36" />
+									<rect x="104" y="306" width="132" height="120" rx="36" />
+									<rect x="276" y="306" width="132" height="120" rx="36" />
+								</g>
+								<rect x="100" y="152" width="312" height="212" rx="46" fill="#ffffff" />
+								<g class="pupils" fill="#12d2f2">
+									<rect class="pupil" x="178" y="209" width="54" height="98" rx="27" />
+									<rect class="pupil" x="280" y="209" width="54" height="98" rx="27" />
+								</g>
+							</svg>
 						</div>
 					</div>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h3>Hopkins Delivery</h3>
-						<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare
-							velit lacus, ac varius sed enim lorem ullamcorper dolore. ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis.</p>
-					</header>
-					<div class="content">
-						<div class="gallery">
-							<a href="images/gallery/fulls/08.jpg" class="portrait"><img
-									src="images/gallery/thumbs/08.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/09.jpg" class="portrait"><img
-									src="images/gallery/thumbs/09.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/10.jpg" class="landscape"><img
-									src="images/gallery/thumbs/10.jpg" alt="" /></a>
-						</div>
-					</div>
-				</section>
-				<!-- Section -->
-				<section>
-					<header>
-						<h3>Tour-guide robot</h3>
-						<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare
-							velit lacus, ac varius sed enim lorem ullamcorper dolore. ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis.</p>
-					</header>
-					<!-- <div class="content">
-						<div class="gallery">
-							<a href="images/gallery/fulls/08.jpg" class="portrait"><img
-									src="images/gallery/thumbs/08.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/09.jpg" class="portrait"><img
-									src="images/gallery/thumbs/09.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/10.jpg" class="landscape"><img
-									src="images/gallery/thumbs/10.jpg" alt="" /></a>
-						</div>
-					</div> -->
-				</section>
-				<!-- Section -->
-				<section>
-					<header>
-						<h3>China Intelligent Vehicle Future Challenge</h3>
-						<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare
-							velit lacus, ac varius sed enim lorem ullamcorper dolore. ac varius enim lorem ullamcorper
-							dolore. Proin aliquam facilisis.</p>
-					</header>
-					<!-- <div class="content">
-						<div class="gallery">
-							<a href="images/gallery/fulls/08.jpg" class="portrait"><img
-									src="images/gallery/thumbs/08.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/09.jpg" class="portrait"><img
-									src="images/gallery/thumbs/09.jpg" alt="" /></a>
-							<a href="images/gallery/fulls/10.jpg" class="landscape"><img
-									src="images/gallery/thumbs/10.jpg" alt="" /></a>
-						</div>
-					</div> -->
-				</section>
+					<figcaption class="mark-note"><span class="en-only">// it watches. it
+							learns.</span><span class="zh-only" lang="zh-Hans">// 机器人在看，也在学。</span>
+					</figcaption>
+				</figure>
 			</div>
 		</section>
 
-		<!-- Section -->
-		<!-- <section>
-			<header>
-				<h2>Duis sed adpiscing veroeros amet</h2>
-			</header>
-			<div class="content">
-				<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-					velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-				<ul class="actions">
-					<li><a href="#" class="button primary large">Get Started</a></li>
-					<li><a href="#" class="button large">Learn More</a></li>
-				</ul>
+		<section class="teach-section container reveal" id="teach">
+			<p class="code-eyebrow">
+				<span class="en-only">// 00 · playground</span>
+				<span class="zh-only" lang="zh-Hans">// 00 · 游乐场</span>
+			</p>
+			<p class="demo-lede">
+				<span class="en-only">A little game. Draw one demonstration and lead the robot to its
+					charger.</span>
+				<span class="zh-only" lang="zh-Hans">来个小游戏，画一次示范，带小机器人找到充电桩。</span>
+			</p>
+			<div class="teach" tabindex="0"
+				aria-label="Interactive demo. Draw a route with mouse or touch.">
+				<svg class="teach-canvas" aria-hidden="true">
+					<g class="teach-obstacles"></g>
+					<g class="teach-goal">
+						<rect class="goal-pad" x="0" y="0" width="44" height="44" rx="10" />
+						<polygon class="goal-bolt" points="25,5 11,25 19,25 17,39 31,19 23,19" />
+					</g>
+					<polyline class="teach-trace" points="" />
+				</svg>
+				<div class="teach-bot" aria-hidden="true">
+					<svg class="coco-mark" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+						<g class="body">
+							<rect x="104" y="86" width="132" height="120" rx="36" />
+							<rect x="276" y="86" width="132" height="120" rx="36" />
+							<rect x="36" y="152" width="120" height="212" rx="36" />
+							<rect x="356" y="152" width="120" height="212" rx="36" />
+							<rect x="104" y="306" width="132" height="120" rx="36" />
+							<rect x="276" y="306" width="132" height="120" rx="36" />
+						</g>
+						<rect class="face" x="100" y="152" width="312" height="212" rx="46" />
+						<g class="pupils">
+							<rect class="pupil" x="178" y="209" width="54" height="98" rx="27" />
+							<rect class="pupil" x="280" y="209" width="54" height="98" rx="27" />
+						</g>
+					</svg>
+				</div>
 			</div>
-		</section> -->
-
-		<!-- Elements -->
-		<!--
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
-
-							<section>
-								<header>
-									<h3>Text</h3>
-								</header>
-								<div class="content">
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<hr />
-									<h5>Blockquote</h5>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h5>Preformatted</h5>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
-
-print 'Sorted in ' + i + ' iterations.';</code></pre>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Lists</h3>
-								</header>
-								<div class="content">
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Table</h3>
-								</header>
-								<div class="content">
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Form</h3>
-								</header>
-								<div class="content">
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</div>
-							</section>
-
-						</div>
-					</section>
-				-->
-
-		<!-- Section -->
-		<section id="contact">
-			<header>
-				<h2>Get in touch</h2>
-			</header>
-			<!-- <div class="content">
-				<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus.
-					Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-				<form action="https://formspree.io/davidgogh96@gmail.com" method="POST">
-					<div class="fields">
-						<div class="field half">
-							<input type="text" name="name" id="name" placeholder="Name" />
-						</div>
-						<div class="field half">
-							<input type="email" name="email" id="email" placeholder="Email" />
-						</div>
-						<div class="field">
-							<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="button primary" /></li>
-					</ul>
-				</form>
-			</div> -->
-			<footer>
-				<ul class="items">
-					<li>
-						<h3>Email</h3>
-						<a href="mailto:contact@yuxiang.io">contact@yuxiang.io</a>
-					</li>
-					<li>
-						<h3>Phone</h3>
-						<a href="#">+86-18672356899</a>
-					</li>
-					<!-- <li>
-						<h3>Address</h3>
-						<span>500 W. University Pkwy, Baltimore, MD 21210</span>
-					</li> -->
-					<li>
-						<h3>Elsewhere</h3>
-						<ul class="icons">
-							<!--										<li><a href="#" class="icon fa-twitter"> <span class="label">Twitter</span></a></li>-->
-							<li><a href="https://www.facebook.com/yxgao96" class="icon fa-facebook"><span
-										class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/david_gogh_/" class="icon fa-instagram"><span
-										class="label">Instagram</span></a></li>
-							<li><a href="https://www.linkedin.com/in/yuxiang-gao-268084114/"
-									class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/DavidGogh" class="icon fa-github"><span
-										class="label">GitHub</span></a></li>
-							<!--										<li><a href="#" class="icon fa-codepen"><span class="label">Codepen</span></a></li>-->
-						</ul>
-					</li>
-				</ul>
-			</footer>
+			<p class="teach-status" aria-live="polite">
+				<span class="en-only" data-status-en>// draw a route around the boxes, end at the
+					charger.</span>
+				<span class="zh-only" lang="zh-Hans" data-status-zh>// 绕开箱子，一笔画到充电桩。</span>
+			</p>
 		</section>
 
-		<!-- Copyright -->
-		<div class="copyright">&copy; Yuxiang's personal website. All rights reserved. Design: <a
-				href="https://html5up.net">HTML5 UP</a>.</div>
-		<div class="copyright">Icon made by <a href="https://www.flaticon.com/authors/epiccoders"
-				title="EpicCoders">EpicCoders</a> from <a href="https://www.flaticon.com/"
-				title="Flaticon">www.flaticon.com</a> is licensed by <a
-				href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
-				3.0 BY</a></div>
+		<section class="coco container reveal" id="coco">
+			<h2><span class="index">// 01</span>COCO Matrix</h2>
+			<img class="coco-logo" src="images/coco/coco-matrix-logo-white.png" alt="COCO Matrix"
+				width="4584" height="758" loading="lazy" decoding="async" />
+			<div class="en-only">
+				<p>
+					COCO Matrix is an embodied-model company chasing <strong>physical AGI through
+					in-context learning</strong>. We train robots to learn new tasks. Everything a robot
+					experiences, the language it hears, what it sees and touches, its own action history,
+					becomes context for the model, and the model adapts on the spot.
+					<strong>No retraining, and not a single weight updated.</strong> Teaching it takes no
+					robotics knowledge. Do the task once in front of it, tell it what went wrong, and
+					that's enough. Grandparents can teach it; so can a shop manager or a nurse.
+					<strong>You teach it the way you'd teach a person</strong>, and like a capable
+					apprentice, it learns from one showing. That's the robot we're building.
+				</p>
+				<p class="co-words">
+					The name spells out the relationship we want with machines. <b>Co</b>exist,
+					<b>co</b>work, <b>co</b>llaborate, <b>co</b>evolve.
+				</p>
+			</div>
+			<div class="zh-only" lang="zh-Hans">
+				<p>COCO Matrix 是一家具身模型公司，用<strong>上下文学习（in-context learning）</strong>去做物理 AGI。我们训练机器人学会新任务。机器人经历的一切，听到的语言、看到的画面、指尖的触觉、自己的动作历史，都会成为模型的上下文，模型当场适应，<strong>既不用重新训练，也不更新任何参数</strong>。教它的人不需要任何机器人知识，做一遍给它看，说一句哪里不对，就够了。爷爷奶奶能教，店长和护士也能教。<strong>像教人一样教机器人</strong>，聪明的学徒，教一遍就会。我们想造的就是这样的机器人。</p>
+				<p class="co-words">名字拼出来的，就是我们想要的人机关系。<b>共</b>存 Coexist、<b>共</b>事 Cowork、<b>协</b>作 Collaborate、<b>共</b>同进化 Coevolve。</p>
+			</div>
+		</section>
 
-	</div>
+		<section class="container reveal" id="journey">
+			<h2><span class="index">// 02</span><span class="en-only">A roboticist's training log</span><span
+					class="zh-only" lang="zh-Hans">一个机器人研究者的训练日志</span></h2>
+			<ul class="log">
+				<li>
+					<span class="years">2013–17</span>
+					<span class="what">
+						<span class="phase">// pretraining</span>
+						<span class="en-only">Xi'an Jiaotong University, Honors Youth Program (少年班).
+							B.S. in electronic information, first research running visual SLAM on an
+							autonomous car.</span>
+						<span class="zh-only" lang="zh-Hans">西安交通大学少年班，电子信息专业本科。第一段研究，是给一辆自动驾驶汽车做视觉 SLAM。</span>
+					</span>
+				</li>
+				<li>
+					<span class="years">2017–19</span>
+					<span class="what">
+						<span class="phase">// imitation</span>
+						<span class="en-only"><strong>Johns Hopkins, M.S.E. in Robotics.</strong> Built PATI
+							(IUI '19), a projected tabletop where anyone can hand a robot arm a task with a
+							few bare-hand gestures. Watching people teach a machine the way they'd teach a
+							colleague planted the question COCO Matrix now works on. Also led JHU's first
+							RoboMaster AI Challenge team into the DJI finals at ICRA 2018.</span>
+						<span class="zh-only" lang="zh-Hans"><strong>约翰·霍普金斯大学，机器人硕士。</strong>做了 PATI（IUI '19），一个投影桌面系统，普通人徒手比划几下，就能给机械臂布置任务。看着人像教同事一样教机器，COCO Matrix 要回答的问题，就是从那时候种下的。也带着 JHU 第一支 RoboMaster AI 挑战赛队伍，打进了 ICRA 2018 的 DJI 决赛。</span>
+					</span>
+				</li>
+				<li>
+					<span class="years">2019–22</span>
+					<span class="what">
+						<span class="phase">// exploration</span>
+						<span class="en-only">Johns Hopkins, <a
+								href="https://intuitivecomputing.github.io/">Intuitive Computing Lab</a>.
+							Human-robot interaction research. Finished the M.S.E. in CS, left the PhD to go
+							build.</span>
+						<span class="zh-only" lang="zh-Hans">约翰·霍普金斯大学，<a href="https://intuitivecomputing.github.io/">Intuitive Computing Lab</a>。研究人机交互。硕士读完，从博士退学，去动手造东西。</span>
+					</span>
+				</li>
+				<li>
+					<span class="years">2022–24</span>
+					<span class="what">
+						<span class="phase">// deployment</span>
+						<span class="en-only">CTO of a healthcare-AI startup, teaching computer vision to
+							read human bodies and movement while guiding real patients through
+							physiotherapy. Understanding people, in a different setting.</span>
+						<span class="zh-only" lang="zh-Hans">一家医疗 AI 公司的 CTO，用计算机视觉读懂人的身体和动作，带真实患者做康复训练。理解人这门功课，换了个场景继续。</span>
+					</span>
+				</li>
+				<li>
+					<span class="years">2024–26</span>
+					<span class="what">
+						<span class="phase">// world models</span>
+						<span class="en-only"><strong><a
+									href="https://fourierintelligence.com/">Fourier</a>.</strong> Architected
+							the teleoperation
+							backbone behind large-scale humanoid data collection, which at scale is simply
+							people showing robots how to work. Led world-model action policy research on a
+							full-size humanoid, the kind of model base in-context learning stands on.
+							Somewhere in there, COCO Matrix turned from a question into a plan.</span>
+						<span class="zh-only" lang="zh-Hans"><strong><a href="https://fourierintelligence.com/">傅利叶</a>。</strong>搭建了大规模人形机器人数据采集背后的遥操作系统，这件事本身，就是人成规模地做给机器人看。在全尺寸人形机器人上主导世界模型动作策略的研发，机器人要做上下文学习，靠的正是这种模型底座。做着做着，COCO Matrix 从一个问题变成了一份计划。</span>
+					</span>
+				</li>
+				<li>
+					<span class="years now">2026–</span>
+					<span class="what">
+						<span class="phase">// in-context learning</span>
+						<span class="en-only"><strong>COCO Matrix, founder &amp; CEO.</strong> Ten years of
+							watching people teach robots, gathered into one company. We build embodied models
+							that learn in context, from demonstration, language, and touch, for the people
+							they will serve.</span>
+						<span class="zh-only" lang="zh-Hans"><strong>COCO Matrix，创始人 &amp; CEO。</strong>十年攒下的问题和答案，都汇进了这家公司。我们做在上下文中学习的具身模型，从示范、语言和触觉里学，向人学，也为人服务。</span>
+					</span>
+				</li>
+			</ul>
+		</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<section class="container reveal" id="research">
+			<h2><span class="index">// 03</span><span class="en-only">Selected research</span><span
+					class="zh-only" lang="zh-Hans">部分研究</span></h2>
+			<ul class="pubs">
+				<li>
+					<a href="https://world-mind.github.io/DualWorld/">DualWorld: a dual-system world model
+						for full-size humanoid robots</a>
+					<span class="meta">project · fourier / world-mind · 2025</span>
+				</li>
+				<li>
+					<a
+						href="https://scholar.google.com/scholar?q=%22Forging+Productive+Human-Robot+Partnerships+Through+Task+Training%22">Forging
+						productive human-robot partnerships through task training</a>
+					<span class="meta">acm thri · 2023 · stiber, gao, taylor, huang</span>
+				</li>
+				<li>
+					<a
+						href="https://scholar.google.com/scholar?q=%22Learning+a+Group-Aware+Policy+for+Robot+Navigation%22">Learning
+						a group-aware policy for robot navigation</a>
+					<span class="meta">iros · 2022 · katyal, gao, et al.</span>
+				</li>
+				<li>
+					<a
+						href="https://scholar.google.com/scholar?q=%22Evaluation+of+socially-aware+robot+navigation%22">Evaluation
+						of socially-aware robot navigation</a>
+					<span class="meta">frontiers in robotics &amp; ai · 2022 · gao, huang</span>
+				</li>
+				<li>
+					<a href="https://dl.acm.org/citation.cfm?id=3302326">PATI: a projection-based augmented
+						table-top interface for robot programming</a>
+					<span class="meta">acm iui · 2019 · gao, huang</span>
+				</li>
+			</ul>
+		</section>
+
+	</main>
+
+	<footer class="footer container">
+		<p class="hello">
+			<span class="en-only">Say hello · </span><span class="zh-only" lang="zh-Hans">打个招呼 · </span>
+			<a href="mailto:gaoyuxiang@cocomatrix.cn">gaoyuxiang@cocomatrix.cn</a>
+		</p>
+		<ul class="footer-links">
+			<li><a href="https://github.com/DavidGogh">github</a></li>
+			<li><a href="https://www.linkedin.com/in/yuxiang-gao-268084114/">linkedin</a></li>
+			<li><a href="https://www.instagram.com/david_gogh_/">instagram</a></li>
+		</ul>
+		<p class="fine">// © 2026 yuxiang gao · coexist · cowork · collaborate · coevolve</p>
+	</footer>
+
+	<script src="assets/js/site.js?v=8" defer></script>
 
 </body>
 
