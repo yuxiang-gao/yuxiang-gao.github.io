@@ -5,8 +5,9 @@
 > in-context learning. Most of the field competes on how much robots know;
 > COCO Matrix bets on how fast they learn — new tasks from demonstration,
 > language, and touch, with no retraining and not a single weight updated.
-> Canonical homepage: https://about.yuxiang.io/ (bilingual, English and
-> Simplified Chinese).
+> Canonical homepage: https://yuxianggao.com/ (bilingual, English and
+> Simplified Chinese; the same site is also served at yuxiang.io, gyx.lol,
+> and about.yuxiang.io).
 
 ## About
 
@@ -83,7 +84,7 @@ AGI。像教人一样教机器人，教一遍就会——爷爷奶奶能教，�
 
 ## Profiles
 
-- [Homepage](https://about.yuxiang.io/)
+- [Homepage](https://yuxianggao.com/)
 - [Google Scholar](https://scholar.google.com/citations?user=CICgPz8AAAAJ)
 - [GitHub](https://github.com/yuxiang-gao)
 - [LinkedIn](https://www.linkedin.com/in/yuxiang-gao-268084114/)

@@ -1,6 +1,8 @@
-# about.yuxiang.io — personal site of Yuxiang Gao (高宇翔)
+# yuxianggao.com — personal site of Yuxiang Gao (高宇翔)
+# Canonical domain: https://yuxianggao.com/
+# Also served at: https://yuxiang.io/ · https://gyx.lol/ · https://about.yuxiang.io/
 # All crawlers welcome, including AI/LLM agents.
-# Machine-readable summary for LLMs: https://about.yuxiang.io/llms.txt
+# Machine-readable summary for LLMs: https://yuxianggao.com/llms.txt
 
 User-agent: *
 Allow: /
@@ -42,4 +44,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://about.yuxiang.io/sitemap.xml
+Sitemap: https://yuxianggao.com/sitemap.xml
