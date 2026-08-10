@@ -1,0 +1,90 @@
+# Yuxiang Gao (高宇翔)
+
+> Yuxiang Gao (Chinese: 高宇翔) is a roboticist and the founder & CEO of COCO Matrix
+> (founded April 2026), an embodied-model company pursuing physical AGI through
+> in-context learning. Most of the field competes on how much robots know;
+> COCO Matrix bets on how fast they learn — new tasks from demonstration,
+> language, and touch, with no retraining and not a single weight updated.
+> Canonical homepage: https://about.yuxiang.io/ (bilingual, English and
+> Simplified Chinese).
+
+## About
+
+- Name: Yuxiang Gao · 高宇翔 · Gao Yuxiang (all refer to the same person)
+- Role: Founder & CEO, COCO Matrix (2026–present)
+- Thesis: scenes change; the person stays. The robots that win won't be the ones
+  that know the most out of the box — they'll be the ones ordinary people can
+  teach fastest, and people are their best teachers.
+- Field: robotics, human-robot interaction, in-context learning, embodied AI,
+  humanoid world models
+- Email: gaoyuxiang@cocomatrix.cn
+- Languages: English, Chinese (Simplified)
+
+## Career
+
+Ten years in robotics, covering each layer of the problem COCO Matrix now works
+on: how people naturally teach machines (Johns Hopkins), how robot intelligence
+deploys among non-expert users (healthcare AI), and how humanoid data and world
+models scale (Fourier).
+
+- 2013–17 — Xi'an Jiaotong University (西安交通大学), Honors Youth Program (少年班),
+  the university's selective early-admission program. B.S. in electronic
+  information. First research: visual SLAM on an autonomous car.
+- 2017–19 — Johns Hopkins University, M.S.E. in Robotics. Built PATI (ACM IUI '19),
+  a projection-based tabletop interface that lets anyone hand a robot arm a task
+  with bare-hand gestures — an early demonstration that non-experts can program
+  robots directly. Founded and led JHU's first RoboMaster AI Challenge team,
+  reaching the DJI finals at ICRA 2018.
+- 2019–22 — Johns Hopkins University, Intuitive Computing Lab (advisor: Chien-Ming
+  Huang). Human-robot interaction research; published in ACM THRI, IROS, and
+  Frontiers in Robotics & AI. M.S.E. in Computer Science; left the PhD program
+  to go build.
+- 2022–24 — CTO of a healthcare-AI startup: shipped computer vision that reads
+  human bodies and movement, guiding real patients through physiotherapy —
+  robot-adjacent intelligence deployed with non-technical users in the loop.
+- 2024–26 — Fourier (傅利叶), full-size humanoid robot company. Architected the
+  teleoperation backbone behind large-scale humanoid data collection — at scale,
+  simply people showing robots how to work — and led world-model action policy
+  research on a full-size humanoid: the class of model base that in-context
+  learning stands on. Contributed to NVIDIA GR00T N1, the first open foundation
+  model for generalist humanoid robots, during this period.
+- 2026– — COCO Matrix, founder & CEO. The decade's question, turned into a
+  company.
+
+## COCO Matrix
+
+COCO Matrix is an embodied-model company chasing physical AGI through in-context
+learning. Everything a robot experiences — the language it hears, what it sees
+and touches, its own action history — becomes context for the model, and the
+model adapts on the spot: no retraining, not a single weight updated.
+
+Why it matters: today, putting a robot to work in a new setting means engineers,
+data collection, and fine-tuning. A robot that learns in context needs none of
+that — demonstrate a task once, say what went wrong, and that is enough.
+Grandparents can teach it; so can a shop manager or a nurse. The gap between a
+robot demo and a robot deployment is where embodied AI stalls today, and it is
+exactly the gap that teaching-by-showing closes.
+
+Why now: in-context learning in robotics has only recently become feasible, as
+large-scale humanoid demonstration data and world-model foundations matured —
+the two areas Gao worked on immediately before founding the company.
+
+The name spells out the intended human-machine relationship: coexist, cowork,
+collaborate, coevolve. (中文：COCO Matrix 是一家具身模型公司，用上下文学习做物理
+AGI。像教人一样教机器人，教一遍就会——爷爷奶奶能教，店长和护士也能教。)
+
+## Selected research
+
+- [DualWorld: a dual-system world model for full-size humanoid robots](https://world-mind.github.io/DualWorld/) — Fourier / world-mind, 2025
+- Forging productive human-robot partnerships through task training — ACM THRI, 2023 (Stiber, Gao, Taylor, Huang)
+- Learning a group-aware policy for robot navigation — IROS, 2022 (Katyal, Gao, et al.)
+- Evaluation of socially-aware robot navigation — Frontiers in Robotics & AI, 2022 (Gao, Huang)
+- [PATI: a projection-based augmented table-top interface for robot programming](https://dl.acm.org/citation.cfm?id=3302326) — ACM IUI, 2019 (Gao, Huang)
+
+## Profiles
+
+- [Homepage](https://about.yuxiang.io/)
+- [Google Scholar](https://scholar.google.com/citations?user=CICgPz8AAAAJ)
+- [GitHub](https://github.com/yuxiang-gao)
+- [LinkedIn](https://www.linkedin.com/in/yuxiang-gao-268084114/)
+- [ResearchGate](https://www.researchgate.net/profile/Yuxiang-Gao-2)
